@@ -1,0 +1,212 @@
+.hidden-file {
+    display: none;
+}
+
+.file-name-display {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+body.dank-mode .file-name-display {
+    color: #ccc;
+}
+
+
+/* Light Mode */
+body{
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color: #333;    
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+form{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;;
+}
+
+label{
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="file"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Upload Button - Light Mode */
+.btn-upload {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-upload:hover {
+    background-color: #2980b9;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+h3{
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+ul{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+li{
+    padding: 50px 0;
+    color: #333;
+}
+
+/* Toggle Button in Light Mode */
+.btn-toggle{
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-toggle:hover{
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Dark Mode */
+
+body.dank-mode {
+    background-color: #121212;
+    background-image: radial-gradient(circle, #1e1e1e 0%, #121212 100%);
+    color: #f0f0f0;
+}
+
+body.dank-mode h1 {
+    color: #dd0d0d;
+    text-shadow: 0 0 10px #dd0d0d;
+}
+
+body.dank-mode form {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+body.dank-mode label {
+    color: #ddd;
+}
+
+body.dank-mode input[type="file"],
+body.dank-mode textarea,
+body.dank-mode textarea:focus,
+body.dank-mode textarea:active {
+    background-color: #1f1f1f;
+    color: #f0f0f0 !important;    /* Force correct text color */
+    border: none;
+    outline: none;
+}
+
+body.dank-mode textarea::placeholder {
+    color: #aaa;
+}
+
+body.dank-mode .btn-upload {
+    background-color: #dd0d0d;
+    color: #121212;
+    box-shadow: 0 0 10px #dd0d0d, 0 0 20px #dd0d0d;
+}
+
+body.dank-mode .btn-upload:hover {
+    background-color: #dd0d0d;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #dd0d0d, 0 0 30px #dd0d0d;
+}
+
+body.dank-mode button {
+    background-color: #dd0d0d;
+    color: #121212;
+    box-shadow: 0 0 10px #dd0d0d, 0 0 20px #dd0d0d;
+}
+
+body.dank-mode button:hover {
+    background-color: #dd0d0d;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #dd0d0d, 0 0 30px #dd0d0d;
+}
+
+body.dank-mode h3 {
+    color: #dd0d0d;
+    text-shadow: 0 0 8px #dd0d0d;
+}
+
+body.dank-mode ul {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+body.dank-mode li {
+    color: #f0f0f0;
+}
+
+/* Toggle Button in Dark Mode */
+body.dank-mode .btn-toggle {
+    border-color: #dd0d0d;
+    color: #000000;
+    box-shadow: 0 0 10px #dd0d0d;
+}
+
+body.dank-mode .btn-toggle:hover {
+    background-color: #dd0d0d;
+    color: #121212;
+}
